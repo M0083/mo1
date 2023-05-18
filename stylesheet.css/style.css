@@ -1,9 +1,11 @@
 header{
-  width: 100%;
-  display: flex;
- position: fixed;
- z-index: 2;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 20;
+    top: 0;
 }
+
 body{
     margin: 0;
 }
@@ -11,15 +13,19 @@ body{
 .topnav {
     background-color: #333;
     overflow: hidden;
-    border-bottom: 1px solid lightgray; 
+    border-bottom: 1px solid lightgray;
     opacity: 1;
     justify-content: space-around;
     display: flex;
-    width: 100svw;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+    width: 100vw;
+}
+
+main {
+    margin-top: 49px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -27,50 +33,81 @@ body{
     text-decoration: none;
     font-size: 17px;
     width: auto;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
     color: white;
-  }
+}
 
-  .schule div{
-    color: #ddd;
-    width: 50%;
-    font-size: 20px;
-    padding: 20px;
-
-    border-bottom: 1px solid lightgray; 
-  }
-  section{
-   background-color: #333;
-    display: flex;  
+section{
+    background-color: #333;
+    display: flex;
     height: auto;
-   
-  }
+}
 
 .schule{
     background-image: url("../img/s.jpeg");
     background-repeat: no-repeat;
-   background-size: cover;
-   height: auto;
+    background-size: cover;
+    height: auto;
 }
+
+.wrapper {
+    position: relative;
+    width: 50%;
+    min-height: 100vh;
+}
+
+.text-wrapper {
+    padding: 1rem;
+}
+
+.hero-button {
+    min-width: 6rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0.1rem;
+    color: white;
+    background: linear-gradient(sandybrown, saddlebrown);
+}
+
 .bck-col{
-    background-color: rgb(0, 0, 0);
-    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: whitesmoke;
+    backdrop-filter: blur(5px) brightness(80%);
+
+    display: flex;
+    align-items: center;
+    overflow: scroll;
 }
+
 .img-container{
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .img-container img{
     height: 520px;
     width: 230px;
@@ -79,47 +116,106 @@ body{
 footer{
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-size: 30px;
-   flex-direction: column;
-   border-top: 1px solid lightgray;
-  }
+    flex-direction: column;
+    border-top: 1px solid lightgray;
+}
 
-.videosos-und-zitat{
-display: flex;
-padding-left: 100px;
-align-items: center;
-color: #f2f2f2;
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.video-wrapper {
+}
 
-
+.video-wrapper h2 {
+    text-align: center;
 }
 
 body{
-  background-color: #333;
- overflow-x: hidden;
+    font-family: Arial;
+    background-color: #333;
+    overflow-x: hidden;
 }
 
 body {
-  color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 img {
- height: 100%;
+    height: 100%;
 
- 
+
 }
 .praktikum div{
-width: 50%;
-border-bottom: 1px solid lightgray;
+    width: 50%;
+    border-bottom: 1px solid lightgray;
 }
 video{
- height: 420px;
- width: 720px;
+    height: 420px;
+    width: 720px;
 }
-.videose{
-display: flex;
-justify-content: center;
-align-items:  center;
 
+.hidden {
+    display: none;
+}
+
+.lol {
+    width: 100%;
+    background-image: url('../img/man.jpeg');
+    background-size: cover;
+    border: 1px solid red;
+}
+
+.praktikum p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    position: relative;
+}
+
+footer a {
+    color: lightseagreen;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+
+.scroll-top {
+    background: lightseagreen;
+    border: 0;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    height: 3px;
+    width: 3px;
+    margin: 15px;
+    opacity: 0.75;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 4px;
+    transform: rotate(-135deg);
 }
